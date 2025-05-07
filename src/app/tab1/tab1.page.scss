@@ -1,0 +1,41 @@
+.banner__title {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 130%;
+    color: #2f264d;
+    text-align: center;
+}
+.banner__description {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #423f4d;
+    margin-bottom: 30px;
+    text-align: center;
+}
+ion-button.banner__link {
+    --background: #795bda;
+    --color: #fff;
+    --padding-top: 24px;
+    --padding-bottom: 24px;
+    --padding-start: 50px;
+    --padding-end: 50px;
+    --border-radius: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+    text-transform: none; // якщо не хочеш капсом
+  }
+.banner__text {
+
+    text-align: center;
+
+}
+.banner {
+    position: relative;
+    padding: 45px 0;
+    background: #fff;
+    background-image: url(/assets/bg-banner.svg);
+    background-repeat: no-repeat;
+    background-position: center 10vw;
+}
