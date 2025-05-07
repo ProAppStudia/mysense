@@ -1,0 +1,71 @@
+
+
+<ion-header translucent="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <img src="assets/mysense-logo.svg" alt="Logo" height="30" />
+    </ion-buttons>
+    
+    <ion-buttons slot="end">
+      <div class="skip-button">
+        <ion-button fill="clear" size="small" (click)="skip()">Пропустити</ion-button>
+      </div>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="slider-container">
+    <div class="slides" [ngStyle]="{'transform': 'translateX(' + slidePosition + '%)'}">
+      <div class="slide">
+        <div class="how-start__item__text">
+           <img class=" ls-is-cached" src="/assets/test_680943e5d526f.png">     
+             <span class="how-start__item__number">01</span>   
+                  <h3 class="how-start__item__title">Пройдіть тест</h3>  
+                        <p class="how-start__item__description">Пройдіть короткий, але ефективний тест і ми запропонуємо фахівців, які максимально підходять до вашого запиту        </p> 
+         </div>
+      </div>
+      <div class="slide">
+        <div class="how-start__item__text">
+           <img class=" ls-is-cached" src="/assets/step_2_680945b39ef65.png">     
+             <span class="how-start__item__number">02</span>   
+                  <h3 class="how-start__item__title">Оберіть психолога
+                  </h3>  
+                        <p class="how-start__item__description">Перегляньте профілі запропонованих психологів та оберіть того, хто вам найбільше сподобався
+
+                        </p> 
+         </div>
+      </div>
+      <div class="slide">
+        <div class="how-start__item__text">
+           <img class=" ls-is-cached" src="/assets/step_3_68094627397f4.png">     
+             <span class="how-start__item__number">03</span>   
+                  <h3 class="how-start__item__title">Забронюйте консультацію
+                  </h3>  
+                        <p class="how-start__item__description">Оберіть зручний для вас час із графіка вільних годин, забронюйте цей час та здійсніть оплату через безпечну платіжну систему.
+
+                        </p> 
+         </div>
+      </div>
+      <div class="slide">
+        <div class="how-start__item__text">
+           <img class=" ls-is-cached" src="/assets/step_4_6809467347b70.png">     
+             <span class="how-start__item__number">04</span>   
+                  <h3 class="how-start__item__title">Працюйте з психологом в обраному форматі
+
+                  </h3>  
+                        <p class="how-start__item__description">Онлайн-зустрічі проходять за посиланням, які ви будете отримувати в чаті свого особистого профілю. Очні зустрічі проходять у кабінеті психолога.
+
+
+
+                        </p> 
+         </div>
+      </div>
+    </div>
+
+    <div class="pagination">
+      <ion-button (click)="prevSlide()">Назад</ion-button>
+      <ion-button (click)="nextSlide()">Далі</ion-button>
+    </div>
+   
+  </div>
+</ion-content>

@@ -1,3 +1,4 @@
+import { IonicModule } from '@ionic/angular';
 import {
     IonHeader,
     IonToolbar,
@@ -25,6 +26,7 @@ import {
   } from '@ionic/angular/standalone';
   
   export const IONIC_STANDALONE_IMPORTS = [
+    IonicModule,
     IonHeader,
     IonToolbar,
     IonTitle,
