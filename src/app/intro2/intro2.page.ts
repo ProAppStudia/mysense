@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicSlides } from '@ionic/angular';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
@@ -15,11 +15,7 @@ register();
   schemas: [CUSTOM_ELEMENTS_SCHEMA],  // Add this to avoid errors with web components
 })
 
-export class Intro2Page implements OnInit {
+export class Intro2Page {
   swiperModules = [IonicSlides];
   constructor() { }
-
-  ngOnInit() {
-  }
-
 }

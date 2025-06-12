@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Psychologists</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-input placeholder="Search" [(ngModel)]="search" (ionInput)="filter()"></ion-input>
+  </ion-item>
+  <ion-list>
+    <ion-item button *ngFor="let p of filtered" (click)="open(p)">
+      <ion-label>
+        <h2>{{p.name}}</h2>
+        <p>{{p.specialization}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
