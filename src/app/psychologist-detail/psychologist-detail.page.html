@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{psychologist?.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="psychologist">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{psychologist.name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{psychologist.specialization}}</p>
+      <p>{{psychologist.description}}</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-button expand="block" (click)="book()">Book Session</ion-button>
+</ion-content>
